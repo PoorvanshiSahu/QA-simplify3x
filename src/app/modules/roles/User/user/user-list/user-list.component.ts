@@ -13,7 +13,7 @@ export class UserListComponent {
 
   constructor(private userService: UserService) {}
 
-  ngOnInit() {
-    this.users = this.userService.getUsers();
-  }
+  // ngOnInit() {
+  //   this.users = this.userService.getUsers();
+  // }
 }
