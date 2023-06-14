@@ -9,7 +9,6 @@ const routes: Routes = [
   { path: 'users', component: UserListComponent },
   { path: 'users/:id', component: UserDetailsComponent },
 ];
-
 @NgModule({
   imports: [RouterModule.forRoot(routes), RouterModule],
   exports: [RouterModule],
