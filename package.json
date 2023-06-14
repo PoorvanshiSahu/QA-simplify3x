@@ -12,7 +12,8 @@
     "format": "prettier --write 'src/**/*.ts'",
     "check-format": "prettier --check 'src/**/*.ts'",
     "lint:js": "eslint . --ext .js",
-    "lint:js:fix": "npm run lint:js -- --fix"
+    "lint:js:fix": "npm run lint:js -- --fix",
+    "prepare": "husky install"
   },
   "private": true,
   "dependencies": {

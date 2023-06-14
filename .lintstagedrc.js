@@ -1,3 +1,11 @@
 module.exports = {
-    "src/**/*.js": ["npm run lint:js"],
-  };
+    "*.ts": [
+      "prettier --write",
+      "eslint"
+    ],
+    "*.html": [
+      "eslint",
+      "prettier --write"
+    ],
+    "*.scss": "prettier --write"
+  }
