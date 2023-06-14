@@ -13,8 +13,18 @@
     "check-format": "prettier --check 'src/**/*.ts'",
     "lint:js": "eslint . --ext .js",
     "lint:js:fix": "npm run lint:js -- --fix",
-    "prepare": "husky install"
+    "prettier:check": "prettier --config .prettierrc --check \"src/**/*.{ts,css,html}\""
   },
+  "lint-staged": {
+    "src/**/*.{ts,css,html}": [
+        "npm run prettier:check"
+    ]
+  },
+  "husky": {   
+     "hooks": {  
+        "pre-commit": "npm run prettier:check"        
+      }   
+   },
   "private": true,
   "dependencies": {
     "@angular/animations": "^15.2.0",
